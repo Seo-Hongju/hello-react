@@ -26,7 +26,7 @@ class LifeCycleSample extends Component {
     console.log('componentDidMount');
   }
 
-  shouldComponenetUpdate(nextProps, nextState) {
+  shouldComponentUpdate(nextProps, nextState) {
     console.log('shouldComponentUpdate', nextProps, nextState);
     // 숫자의 마지막 자리가 4면 리렌더링하지 않습니다.
     return nextState.number % 10 !== 4;
